@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Agente</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="agente.css">
+</head>
+<body>
+
+<header>
+    <h1>Inicio de Sesión - Agente</h1>
+</header>
+
+<div class="form-container" id="login-form">
+    <h3>Iniciar sesión</h3>
+    <form id="form-login" onsubmit="return login(event)">
+        <label for="cedula">Cédula</label>
+        <input type="text" id="cedula" placeholder="Ingrese su cédula" required>
+        
+        <label for="clave">Clave</label>
+        <input type="password" id="clave" placeholder="Ingrese su clave" required>
+
+        <button type="submit">Iniciar sesión</button>
+    </form>
+</div>
+
+<script src="lon.js"></script>
+</body>
+</html>

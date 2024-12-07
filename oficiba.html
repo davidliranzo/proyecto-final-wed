@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo Oficina Central</title>
+    <link rel="stylesheet" href="stilo.css">
+</head>
+<body>
+    <div class="menu">
+        <h1>Módulo Oficina Central 🏢</h1>
+        <a href="principal.html">Volver al menú principal</a>
+    </div>
+
+    <section id="oficina-central" class="modulo">
+        <button onclick="manageFines()">Gestionar Multas 🔍</button>
+        <button onclick="generateReport()">Reporte de Ingresos 📈</button>
+        <button onclick="showMap()">Mapa de Multas 🗺️</button>
+        <button onclick="manageAgents()">Gestionar Agentes 👥</button>
+
+        <!-- Gestionar Multas -->
+        <div id="manage-fines" class="form-container" style="display: none;">
+            <h3>Gestionar Multas</h3>
+            <input type="text" id="search-cédula" placeholder="Buscar por cédula">
+            <button onclick="searchFines()">Buscar Multas</button>
+            <ul id="fines-to-manage">
+                <!-- Multas para gestionar -->
+            </ul>
+        </div>
+
+        <!-- Reporte de Ingresos -->
+        <div id="generate-report" class="form-container" style="display: none;">
+            <h3>Reporte de Ingresos</h3>
+            <input type="month" id="report-month" />
+            <button onclick="generateIncomeReport()">Generar Reporte</button>
+            <div id="income-report">
+                <!-- El reporte de ingresos aparecerá aquí -->
+            </div>
+        </div>
+
+        <!-- Gestionar Agentes -->
+        <div id="manage-agents" class="form-container" style="display: none;">
+            <h3>Gestionar Agentes</h3>
+            <button onclick="addAgent()">Agregar Agente</button>
+            <ul id="agents-list">
+                <!-- Agentes -->
+            </ul>
+        </div>
+    </section>
+
+    <script src="principal.js"></script>
+</body>
+</html>
